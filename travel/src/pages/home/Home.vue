@@ -1,15 +1,19 @@
 <template>
   <div>
-    home
+    <home-Header></home-Header>
 
   </div>
 </template>
 <script>
+import HomeHeader from './components/Header'
 export default {
   props: [],
   data () {
     return {
     }
+  },
+  components: {
+    HomeHeader
   }
 }
 </script>
