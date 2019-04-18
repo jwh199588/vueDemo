@@ -1,29 +1,6 @@
-# travel
+## 准备工作 ##
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+ 1. 为了保证移动端的样式，引入`border.css  reset.css`,在`main.js`中使用
+ 2. 移动端点击事件会有300毫秒的延迟，引入了`fastclick`
+    在`main.js`中添加`fastClick.attach(document.body)`
+ 3. 添加iconfont账号
