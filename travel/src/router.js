@@ -8,11 +8,5 @@ export default new Router({
     path: '/',
     name: 'home',
     component: () => import('./pages/home/Home.vue')
-  },
-  {
-    path: '/list',
-    name: 'list',
-    component: () => import('./pages/list/list.vue')
-  }
-  ]
+  }]
 })
