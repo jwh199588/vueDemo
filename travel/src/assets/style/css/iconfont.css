@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "iconfont";
+  src: url('../iconfont/iconfont.eot?t=1555643171444');
+  /* IE9 */
+  src: url('../iconfont/iconfont.eot?t=1555643171444#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAO8AAsAAAAACEwAAANtAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDMgqDXIMrATYCJAMUCwwABCAFhG0HVRtEBxHVm7vIfibYthK2We+trZkno7CM9EzwhHn0bzJpNwt/WbhRJzUASlZ6v21P5UpaSJi9zu9a0e0OsbGv/3PMdFk4zG+zkc0oO2hvgKOL1APtwCrRALkD41uGt12sDuNmCBBGKnIgFSrVaIDDQvYSQHp07dwWl7FiGxoFh+BXnGiROXg4M9XcAGYHPy8fyScODJ5CDqzTqWIHyrzh41IdE4yhhYdANp0bkE4DBXIAFqRfpbcHGmVzoIQZf2cpA4ThMJg3vPHfxH5cGgSm8kD6MCo7yj+eQUF8SH0EAGUwZ+ENDh8Cb3xplS4W3RieTYY5FHiuEyEMiANmAscglAx8WTAIUcmSRSS08CTDpx9duSLLgwcNtly5cC3bqVKNTj0qtW3V6uPhjYc3WpTo9GN59KhRwyEPHzZ8/Lj0woQNF07fPrZXUZRRN8ZLPXjQuePCMQmyLJiWqNOisYk7L56eMKu5qXU0UeGO8EgihIYT9imFfkxMWfHAyUL1mi/dXblG+kJ90urwnY2b72zQpKpuPZcwxScoUSbhk5cN6uXO1LeMrrx5d5nS8ht3daWuupFctCLDcv/JUODJi+OpO6eOWzrW7NijE3WCxxyr45RpJpiJBzN49JgxU5NO7bQk6ZKdO6cmm+qKI3WnQgtH0s9KMitxG0pIkoeY2CAeEJJsICYehKiiTkJMiT8gI8mxxKwZSWYkbkVIksvHEPBgPWUmQVDvaD0IKPTXAtAqJsNP/h2iUxwY2Tq6xG8XbgF48rpF+iASsAyT/ikdnWW/VNZxypoKYvOsPu5I9e08ihAFgJEWhAE/MhjHq2n0CTvXg+BImIAhhJQxxbF9N1jE5gCPcAqAj6M0hJGdyqeHE08/FLGhQDYmAggx7AZDFKdBieEm0mJfgkciPoNPjCiE0UjiLxhOJuEHVZ6xEeyh/cHQbSsxh6iw8Yr6NTecVgSsJ/I5JMB3vHzhgivyFIecbx2IEBBvC5RwO5znDXbeRuzEMSJ74bpU9UJOty2WojxjI9hD+4Oh21by5osqfP8V9WtuuGGiIfhEPoetg+94HZAX7dpp4lbucr51IEJAvC1Qghtnmt1gr95uxE4cMyC9Fy43i7pqneX1yzteAYRBLuGJERUrnvi4IUOzalcSVvybwU/tp2ioZiSxqz2+ZQEAAAA=') format('woff2'),
+    url('../iconfont/iconfont.woff?t=1555643171444') format('woff'),
+    url('../iconfont/iconfont.ttf?t=1555643171444') format('truetype'),
+    /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url('../iconfont/iconfont.svg?t=1555643171444#iconfont') format('svg');
+  /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
