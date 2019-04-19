@@ -5,3 +5,5 @@
     在`main.js`中添加`fastClick.attach(document.body)`
  3. 添加iconfont账号
  4. 在项目下添加css预编译插件`stylus`， `npm install stylus --save npm、 install stylus-loader --save`
+### 首页 ###
+ 1. 添加header
