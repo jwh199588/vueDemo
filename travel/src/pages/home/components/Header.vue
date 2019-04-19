@@ -1,8 +1,15 @@
+/* 首页的header */
 <template>
   <div class="header">
-    <div class="header-left">left</div>
-    <div class="header-center">cemter</div>
-    <div class="header-right">right</div>
+    <div class="header-left">
+      <span class="iconfont">&#xeb99;</span>
+    </div>
+    <div class="header-center">
+      <span class="iconfont">&#xe611;</span>
+    </div>
+    <div class="header-right">
+      城市
+      <span class="iconfont icon-right">&#xe606;</span></div>
   </div>
 </template>
 <script>
@@ -11,31 +18,32 @@ export default {
   data () {
     return {
     }
-  },
-  components: {},
-  computed: {},
-  mounted: {},
-  methods: {}
+  }
 }
 </script>
 <style lang="stylus" scoped>
+@import ('~style/variable.styl')
 .header
   display flex
   line-height 0.86rem
-  background-color #0AB8D5
+  background-color $bgColor
   .header-left
-    width 0.9rem
+    text-align center
+    width 0.8rem
     float left
   .header-center
     flex 1
     height 0.64rem
+    padding-left 0.2rem
     line-height 0.64rem
     background #fff
-    margin-top 0.1rem
+    margin-top 0.12rem
     border-radius 0.08rem
     color #ccc
   .header-right
-    width 1.2rem
+    width 1.4rem
     float right
     text-align center
+    .icon-right
+      margin-left -0.05rem
 </style>
