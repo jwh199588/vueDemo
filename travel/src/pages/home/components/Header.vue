@@ -8,7 +8,12 @@
       <span class="iconfont">&#xe611;</span>
     </div>
     <div class="header-right">
-      城市
+      <select>
+        <option>12</option>
+        <option>12</option>
+        <option>12</option>
+        <option>12</option>
+      </select>
       <span class="iconfont icon-right">&#xe606;</span></div>
   </div>
 </template>
