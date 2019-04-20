@@ -1,19 +1,49 @@
+/* 循环播放图标区
+ * swiper代表轮播的区域
+ * swiper-slide代表当前的页面
+ */
 <template>
   <div class="icons">
-    <div class="icon">
-      <div class="icon-img">
-        <img src="http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png"
-             class="icon-img-content">
-      </div>
-      <p class="icon-p">景点门票</p>
-    </div>
+    <swiper :options="swiperOption">
+      <swiper-slide v-for="(page, index) in pageList"
+                    :key="index">
+        <div class="icon"
+             v-for="item in page"
+             :key="item.id">
+          <div class="icon-img">
+            <img :src="item.imgUrl"
+                 class="icon-img-content">
+          </div>
+          <p class="icon-p">{{item.desc}}</p>
+        </div>
+      </swiper-slide>
+    </swiper>
   </div>
 </template>
 <script>
 export default {
-  props: [],
+  props: {
+    iconList: Array
+  },
   data () {
     return {
+      swiperOption: {
+        loop: true, // 循环
+        initialSlide: 1 // 默认第一次显示的位置
+      }
+    }
+  },
+  computed: {
+    pageList () {
+      const pageList = []
+      this.iconList.forEach((item, index) => {
+        const page = Math.floor(index / 8)
+        if (!pageList[page]) {
+          pageList[page] = []
+        }
+        pageList[page].push(item)
+      })
+      return pageList
     }
   }
 }
@@ -52,4 +82,5 @@ export default {
     height 0.44rem
     line-height0 0.44rem
     text-align center
+    ellipsis()
 </style>
