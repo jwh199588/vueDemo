@@ -7,22 +7,24 @@
     <div class="header-center">
       <span class="iconfont">&#xe611;</span>
     </div>
-    <div class="header-right">
-      <select>
-        <option>12</option>
-        <option>12</option>
-        <option>12</option>
-        <option>12</option>
-      </select>
-      <span class="iconfont icon-right">&#xe606;</span></div>
+    <router-link tag="div"
+                 to="/city"
+                 class="header-right">
+      {{this.city}}
+      <span class="iconfont icon-right">&#xe606;</span>
+    </router-link>
   </div>
 </template>
 <script>
+import { mapState } from 'vuex'// vuex的高级用法
 export default {
   props: [],
   data () {
     return {
     }
+  },
+  computed: {
+    ...mapState(['city'])
   }
 }
 </script>
@@ -46,7 +48,8 @@ export default {
     border-radius 0.08rem
     color #ccc
   .header-right
-    width 1.4rem
+    ellipsis()
+    min-width 1.4rem
     float right
     text-align center
     .icon-right
