@@ -29,7 +29,7 @@
      - 使用`better-scroll`插件让浏览器的滑动手感更好
      - 使用vuex和localstorage
 
- 4. 
+ 
 
  
  
