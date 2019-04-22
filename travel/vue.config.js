@@ -2,8 +2,10 @@ const path = require('path')
 /* 配置本地json */
 const express = require('express')
 const app = express()
-var appData = require('./src/assets/mock/index.json')
-var seller = appData
+var indexData = require('./src/assets/mock/index.json')
+var cityData = require('./src/assets/mock/city.json')
+var seller = indexData
+var city = cityData
 var apiRoutes = express.Router()
 app.use('/api', apiRoutes)
 
@@ -27,6 +29,12 @@ module.exports = {
         res.json({
           errno: 0, // 这里是你的json内容
           data: seller
+        })
+      }),
+      app.get('/api/city', (req, res) => {
+        res.json({
+          errno: 0, // 这里是你的json内容
+          data: city
         })
       })
     },
