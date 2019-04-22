@@ -12,5 +12,9 @@ export default new Router({
     path: '/detail/:id',
     name: 'Detail',
     component: () => import('./pages/detail/Detail.vue')
+  }, {
+    path: '/city',
+    name: 'City',
+    component: () => import('./pages/city/City.vue')
   }]
 })
