@@ -16,7 +16,6 @@ import CityInput from './components/input'
 import CityList from './components/list'
 import CityAlpabet from './components/Alpabet'
 import axios from 'axios'
-import { log } from 'util'
 export default {
   name: '',
   data () {

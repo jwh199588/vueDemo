@@ -42,8 +42,12 @@ export default {
       }
     }
   },
-  mounted () {
+  mounted () { // el 被新创建的 vm.$el 替换，并挂载到实例上去之后调用该钩子
     window.addEventListener('scroll', this.handleScroll)
+  },
+  destroyed () { // Vue 实例销毁后调用
+    // 调用window的对象，在切换页面的时候还会存在，所以需要手动的去销毁对象
+    window.removeEventListener('scroll', this.handleScroll)
   }
 }
 </script>
