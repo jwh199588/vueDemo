@@ -2,6 +2,7 @@
   <div>
     <Dropdown placement="bottom-start"
               class="menu_dropdown"
+              trigger="click"
               @on-click="dropdownName">
       <a href="javascript:void(0)">
         文件

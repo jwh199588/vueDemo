@@ -31,6 +31,7 @@ export default {
       this.$emit('listenEvent', '')
     },
     okClick () {
+      this.$store.state.msg = '123'
       this.$emit('listenEvent', '')
     }
   }

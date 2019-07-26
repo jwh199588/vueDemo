@@ -1,0 +1,37 @@
+{
+  "connectName": "sshname",
+  "dataBaseName": "ggj-gather",
+  "childrens": [{
+      "id": 1,
+      "collectionName": "stats-sso"
+    },
+    {
+      "id": 2,
+      "collectionName": "stats-user"
+    },
+    {
+      "id": 3,
+      "collectionName": "stats-code"
+    },
+    {
+      "id": 4,
+      "collectionName": "gathering-task"
+    },
+    {
+      "id": 5,
+      "collectionName": "gathering-taskcode"
+    },
+    {
+      "id": 6,
+      "collectionName": "gathering-data"
+    },
+    {
+      "id": 7,
+      "collectionName": "gathering-workingdata"
+    },
+    {
+      "id": 8,
+      "collectionName": "working-task"
+    }
+  ]
+}

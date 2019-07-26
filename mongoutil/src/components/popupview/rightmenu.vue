@@ -32,6 +32,7 @@ export default {
       this.$refs.contentMenu.$refs.reference = event.target
       this.$refs.contentMenu.currentVisible = !this.$refs.contentMenu.currentVisible
     }
+
   }
 }
 </script>

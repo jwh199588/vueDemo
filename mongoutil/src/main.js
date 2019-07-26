@@ -4,6 +4,11 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import './iview'
+import axios from 'axios'
+import VueAxios from 'vue-axios' // 不加时 请求为 this.axios.get()
+import store from './store'
+Vue.use(VueAxios, axios)
+Vue.$http = axios
 
 Vue.config.productionTip = false
 
@@ -11,6 +16,7 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,
+  store,
   components: {
     App
   },
